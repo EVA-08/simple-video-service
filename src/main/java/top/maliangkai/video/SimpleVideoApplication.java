@@ -14,12 +14,6 @@ public class SimpleVideoApplication {
 		SpringApplication.run(SimpleVideoApplication.class, args);
 	}
 
-	@StoreRestResource(path = "/videos")
+	@StoreRestResource(path = "videos")
 	public interface VideoStore extends Store<String> { }
-
-	@RequestMapping("/hello")
-	@ResponseBody
-	public String hello() {
-		return "hello";
-	}
 }
