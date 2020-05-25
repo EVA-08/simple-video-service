@@ -1,2 +1,7 @@
 server:
   port: 80
+
+spring:
+  content:
+    fs:
+      filesystem-root: /data0/videos
